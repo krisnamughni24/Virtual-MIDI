@@ -1,0 +1,29 @@
+@tailwind components;
+
+.nav {
+  @apply absolute z-20   bottom-0   w-full;
+  @apply px-2   flex   justify-center;
+  @apply bg-white   text-gray-900;
+  box-shadow: 0 0 5px #00000044;
+
+  .nav--menu {
+    @apply relative w-24   text-center;
+    @apply bg-white   hover:bg-gray-100;
+    @apply text-xs pt-2;
+
+    .menu--icon {
+      @apply h-6 mb-1 mx-auto;
+    }
+
+    .menu--select {
+      @apply h-1 mt-1;
+    }
+
+    &:hover{
+      .menu--select {
+        @apply bg-rose-400;
+      }
+    }
+
+  }
+}
